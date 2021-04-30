@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto h-screen flex justify-center items-center">
+  <div class="container mx-auto h-screen flex justify-center items-center">
         <div class="w-full lg:w-1/3 px-10 lg:px-0">
           <div class="flex justify-center items-center mx-auto mt-6 mb-8">
             <img src="/404-illustration.svg" alt="" class="w-full" />
@@ -8,9 +8,9 @@
             Oops! Something went wrong.
           </h2>
           <p class="text-center font-light" v-if="error.statusCode === 404">
-            The page that you requested doesn't
+            The page that you requested
             <br />
-            exist at this moment
+            Doesn't exist at this moment
           </p>
           <p class="text-center font-light" v-else>
             An error occurred
@@ -30,8 +30,8 @@
 </template>
 
 <script>
-export default {
+  export default{
     props: ['error'],
     layout: 'success'
-}
+  }
 </script>
